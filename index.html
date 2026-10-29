@@ -393,6 +393,38 @@
       pointer-events: none;
     }
 
+    /* ── SUPPORT ── */
+    .support-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 7rem 2.5rem 6rem;
+    }
+
+    .support .eyebrow { margin-bottom: 1rem; }
+
+    .support-sub {
+      max-width: 32rem;
+      margin-top: 1.4rem;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    .support-mail {
+      display: inline-block;
+      margin-top: 2rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      font-weight: 400;
+      text-decoration: none;
+      color: var(--cream);
+      border-bottom: 1px solid var(--sage);
+      padding-bottom: 4px;
+      overflow-wrap: anywhere;
+      transition: color 0.25s;
+    }
+
+    .support-mail:hover { color: var(--sage); }
+
     /* ── FOOTER ── */
     footer {
       max-width: 1180px;
@@ -459,6 +491,7 @@
       <ul class="nav-links">
         <li><a href="#apps" data-i18n="nav_apps">Apps</a></li>
         <li><a href="#studio" data-i18n="nav_studio">Studio</a></li>
+        <li><a href="#support" data-i18n="nav_support">Support</a></li>
       </ul>
       <button class="lang-toggle" id="langBtn" type="button" aria-label="Passa all'italiano">IT</button>
     </div>
@@ -587,6 +620,16 @@
     </div>
   </section>
 
+  <!-- SUPPORT -->
+  <section class="support" id="support">
+    <div class="support-inner fade-up">
+      <div class="eyebrow" data-i18n="support_eyebrow">Support</div>
+      <h2 class="section-title" data-i18n-html="support_title">Need help?<br><em>Send an email.</em></h2>
+      <p class="support-sub" data-i18n="support_sub">For questions, bugs or feedback on any of the apps, write to this address. Mention the app name and your device.</p>
+      <a class="support-mail" href="mailto:krevnstudio@gmail.com">krevnstudio@gmail.com</a>
+    </div>
+  </section>
+
   <footer>
     <div class="foot-brand"><img src="favicon.png" alt="">Krevn Studio</div>
     <div class="foot-meta">
@@ -625,6 +668,10 @@
         studio_p1: "<strong>Krevn Studio is an independent one-person studio based in Italy.</strong> Every app is conceived, designed, and built from scratch — no templates, no shortcuts.",
         studio_p2: "The name carries a certain weight on purpose. Each project under this label is meant to feel like an <strong>artifact</strong>: something made with enough care that it earns a place in your life, not just a slot on your homescreen.",
         studio_close: "The studio is the umbrella. The apps are the work.",
+        nav_support: "Support",
+        support_eyebrow: "Support",
+        support_title: "Need help?<br><em>Send an email.</em>",
+        support_sub: "For questions, bugs or feedback on any of the apps, write to this address. Mention the app name and your device.",
         footer_copy: "© 2026 Krevn Studio · Italy"
       },
       it: {
@@ -655,6 +702,10 @@
         studio_p1: "<strong>Krevn Studio è uno studio indipendente di una persona con base in Italia.</strong> Ogni app è concepita, progettata e costruita da zero — nessun template, nessuna scorciatoia.",
         studio_p2: "Il nome porta un certo peso di proposito. Ogni progetto sotto questo marchio è pensato per sembrare un <strong>artefatto</strong>: qualcosa fatto con cura sufficiente da guadagnarsi un posto nella tua vita, non solo uno slot sulla homescreen.",
         studio_close: "Lo studio è l'ombrello. Le app sono il lavoro.",
+        nav_support: "Supporto",
+        support_eyebrow: "Supporto",
+        support_title: "Serve aiuto?<br><em>Scrivi una mail.</em>",
+        support_sub: "Per domande, bug o feedback su una qualsiasi app, scrivi a questo indirizzo. Indica il nome dell'app e il tuo dispositivo.",
         footer_copy: "© 2026 Krevn Studio · Italia"
       }
     };
